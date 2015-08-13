@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-# this file is linked to unittest testing
-# Python 3 Implementation of the Luhn Algorithm
+# Python 3.4 Implementation of the Luhn Algorithm
 # Checks to see if 14, 15 or 16 digit account number is Luhn Compliant.  
 # See https://en.wikipedia.org/wiki/Luhn_algorithm for formula details.  
-# where cardNumber is an account number received as a string:
+# This file is suitable for unittest testing
+# CardNumber is an account number (for example) received as a string
+# Code is intentionally verbose to demonstrate each step clearly.
 
 class aLuhn(object):
     def doLuhn(cardNumber):
@@ -50,19 +51,20 @@ class aLuhn(object):
                 db1, db2 = int(db1), int(db2)
                 dbladd = db1 + db2
                 doubleSet.append(dbladd)
+        # add all items in the doubleSet together
         for each in doubleSet:
             addUpDoubles += int(each)
-        # add all items in together in the doubleSet
+        # add together all items not previously doubled 
         for each in addUpTheOddDigits:
             addOther = cardNumber[each]
             otherToAdd = int(addOther)
             addUpOthers += otherToAdd
-        # add all items left over from the original cardNumber
+        # add all the summed up additions together  
         totalSum = int(addUpDoubles) + int(addUpOthers)
-        # take totalSum * 9, then take Modulus of that number by 10
+        # multiply totalSum by 9, then Modulus '%' that number by 10
         totalSumTimesNine = (totalSum * 9)
         modTheTotalSum = (totalSumTimesNine % 10)
-        # compare modTheTotalSum to the right-most digit in cardNumber 
+        # compare modTheTotalSum to the right-most digit of cardNumber 
         if (str(modTheTotalSum) == cardNumber[-1]):
             return(True)
         else:
