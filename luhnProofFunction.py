@@ -1,4 +1,4 @@
-#!/usr/env/python3
+#!/usr/bin/env python3
 
 # no module dependancies 
 # Python 3 Implementation of the Luhn Algorithm
