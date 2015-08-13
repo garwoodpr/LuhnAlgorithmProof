@@ -8,8 +8,8 @@ This module, written in python3, takes a 14, 15, or 16 digit account number
 the provided data. If the data passes the test the system returns 'True',    
 else the system returns 'False'.   
 
-Am account number must be provided as a simple all-digits string without any   
-type of separators, including spaces, or the function will return 'False'.    
+An account number must be provided as a simple all-digits string without any   
+type of separators, including white space, or the function will return 'False'.    
 False values are also returned if the string contains any alpha characters,    
 punctuation marks or non-digit characters of any kind. 
 
