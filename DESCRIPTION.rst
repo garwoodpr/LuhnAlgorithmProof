@@ -11,4 +11,21 @@ else the system returns 'False'.
 Am account number must be provided as a simple all-digits string without any   
 type of separators, including spaces, or the function will return 'False'.    
 False values are also returned if the string contains any alpha characters,    
-punctuation marks or non-digit characters of any kind.   
+punctuation marks or non-digit characters of any kind. 
+
+
+## Using the Luhn Algorithm Validator 
+
+'<code>    
+    import aLuhn from luhn   
+    
+    >>> cardNumber = '2222222222222224'   
+    >>> trueOrFalse = aLuhn.doLuhn(cardNumber)   
+    >>> trueOrFalse    
+    True   
+    
+    >>> cardNumber = '2222222222222222'   
+    >>> trueOrFalse = aLuhn.doLuhn(cardNumber)   
+    >>> trueOrFalse =    
+    False   
+</code>'   
