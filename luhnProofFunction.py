@@ -7,15 +7,16 @@
 # where cardNumber is an account number received as a string:
 
 def doLuhn(cardNumber):
-    cardLength = len(cardNumber)
+    cardLength = str(cardNumber)
+    cardLength = len(cardLength)
+    try: 
+        cardNumbers = int(cardNumber)
+    except ValueError:
+        return(False)
     everyOtherFromFarRightFor16 = [-2,-4,-6,-8,-10,-12,-14,-16]
     everyOtherFromFarRightFor15 = [-2,-4,-6,-8,-10,-12,-14]
     everyOddFromFarRightButOneFor15 = [-3,-5,-7,-9,-11,-13,-15]
     everyOddFromFarRightButOneFor14 = [-3,-5,-7,-9,-11,-13]
-    try:
-        testInt = int(cardNumber)
-    except ValueError:
-        return(False)
     doubleList = []
     doubleSet = []
     addUpDoubles = 0
