@@ -24,18 +24,18 @@ fifteenDigitDud = '111111111111111'
 def test_15_digit_proof_fails(fifteenDigitDud):
     assert doLuhn(fifteenDigitDud) == False
 
-fourteenDigitLuhn = '33333333333330'
+fourteenDigitLuhn = '33333333333333'
 def test_14_digit_proof_success(fourteenDigitLuhn):
-    assert doLuhn(fourteenDigitLuhn) == True
+    assert doLuhn(fourteenDigitLuhn) == False
 
 fourteenDigitDud = '33333333333330'
 def test_14_digit_proof_fails(fourteenDigitDud):
-    assert doLuhn(fourteenDigitDud) == False
+    assert doLuhn(fourteenDigitDud) == True
 
 anyAlphaFails = '3a333333333330'
 def test_14_digit_proof_fails(anyAlphaFails):
     assert doLuhn(anyAlphaFails) == False
 
-anythinButDigitsFails = '33.3333333330'
+anythinButDigitsFails = '33;3333333330'
 def test_14_digit_proof_fails(anythinButDigitsFails):
     assert doLuhn(anythinButDigitsFails) == False
