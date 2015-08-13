@@ -26,6 +26,6 @@ punctuation marks or non-digit characters of any kind.
     
     >>> cardNumber = '2222222222222222'   
     >>> trueOrFalse = aLuhn.doLuhn(cardNumber)   
-    >>> trueOrFalse =    
+    >>> trueOrFalse      
     False   
 </code>'   
