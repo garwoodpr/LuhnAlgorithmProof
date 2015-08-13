@@ -1,0 +1,34 @@
+<h1>Luhn Account Number Validator</h1>
+
+<h3>Tests 14-16 Digit Account Numbers for</h3>
+
+<h3>Luhn Algorithm Compliance</h3>
+
+<p>This module, written in python3, takes a 14, 15, or 16 digit account number <br />
+(for example a credit/debit card number) and applies the Luhn Algorithm to <br />
+the provided data. If the data passes the test the system returns 'True', <br />
+else the system returns 'False'.   </p>
+
+<p>Am account number must be provided as a simple all-digits string without any <br />
+type of separators, including spaces, or the function will return 'False'. <br />
+False values are also returned if the string contains any alpha characters, <br />
+punctuation marks or non-digit characters of any kind. </p>
+
+<h2>Using the Luhn Algorithm Validator</h2>
+
+<p>'<code> <br />
+    import aLuhn from luhn   </p>
+
+<pre><code>&gt;&gt;&gt; cardNumber = '2222222222222224'   
+&gt;&gt;&gt; trueOrFalse = aLuhn.doLuhn(cardNumber)   
+&gt;&gt;&gt; trueOrFalse    
+True   
+
+&gt;&gt;&gt; cardNumber = '2222222222222222'   
+&gt;&gt;&gt; trueOrFalse = aLuhn.doLuhn(cardNumber)   
+&gt;&gt;&gt; trueOrFalse =    
+False   
+</code></pre>
+
+<p></code>'   </p>
+
