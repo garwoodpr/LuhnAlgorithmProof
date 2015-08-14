@@ -17,7 +17,7 @@ punctuation marks or non-digit characters of any kind.
 ## Using the Luhn Algorithm Validator 
 
 '<code>    
-    import aLuhn from luhn   
+    import luhn from aLuhn   
     
     >>> cardNumber = '2222222222222224'   
     >>> trueOrFalse = aLuhn.doLuhn(cardNumber)   
