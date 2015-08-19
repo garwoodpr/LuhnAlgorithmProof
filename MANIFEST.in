@@ -7,6 +7,5 @@ include DESCRIPTION.rst
 include *.txt
 include *.py
 include *.html
-include LICENSE
 include /tests/*
 recursive-include examples *.txt *.py
