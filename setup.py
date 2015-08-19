@@ -47,5 +47,8 @@ setup(
         'Intended Audience :: Customer Service', 
     ]
 
+    keywords=['Luhn Algorithm', 'account number validation', 'credit card validation', 'text analysis', 'information processing', 'data verification', cryptography, 'numerical decoding',
+    ]
+
 )
 
