@@ -3,3 +3,7 @@ include DESCRIPTION.rst
 # This system has not been tested for versions pre-dating Python 3.4
 # in particular return(statements) as well as unittests are likely
 # to fail in earlier versions
+
+include *.txt
+include *.py
+recursive-include examples *.txt *.py
