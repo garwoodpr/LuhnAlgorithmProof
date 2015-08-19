@@ -12,7 +12,9 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 setup(
     name='luhn_algorithm_validator',
 
-    version='1.0.0',
+    version='1.0.1',
+
+    packages = ['luhn'],
 
     description='Luhn Account Number Validator',
     long_description=long_description,
@@ -45,10 +47,10 @@ setup(
         'Natural Language :: English', 
         'License :: OSI Approved :: MIT License',
         'Intended Audience :: Customer Service', 
-    ]
+    ],
 
     keywords=['Luhn Algorithm', 'account number validation', 'credit card validation', 'text analysis', 'information processing', 'data verification', cryptography, 'numerical decoding',
-    ]
+    ],
 
 )
 
