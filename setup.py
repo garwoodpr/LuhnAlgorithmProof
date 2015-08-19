@@ -47,8 +47,5 @@ setup(
         'Intended Audience :: Customer Service', 
     ]
 
-# Project relates to:
-    keywords='Luhn Algorithm', 'account number validation', 'credit card validation', 'text analysis', 'information processing', 'data verification', cryptography, 'numerical decoding',
-
 )
 
